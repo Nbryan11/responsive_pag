@@ -1,0 +1,166 @@
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.b1{
+    width: 75%;
+    padding: 20px;
+    border: none;
+    background-color:cornflowerblue;
+    border-radius: 5px;
+    margin-right: 5px;
+
+    
+}
+
+.img1{
+    border-radius: 50px;
+    
+
+}
+
+.container{
+    background-image: url("fondo4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 4px solid cornflowerblue;
+}
+
+
+
+@media(min-width:1024px){
+    
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .b1{
+        padding: 20px;
+        width: 10%;
+    }
+}
+
+@media(min-width:0px){
+    .footer{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 15px;
+        border-bottom: 4px solid cornflowerblue;
+        
+    
+    }
+}
+
+
+
+.b1:hover{
+    background-color: aliceblue;
+}
+
+.container{
+
+   
+    border-radius: 5px;
+}
+
+
+
+.texto{
+    width: 100%;
+    display:flex;  
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center; 
+    padding: 2px;
+
+
+}
+
+.imagenes{
+    width: 100%; 
+    display: flex;
+    flex-direction: row; 
+    justify-content:space-evenly;
+   
+
+}
+
+
+
+.parrafos{
+    display: flex;
+    justify-content: space-evenly;    
+   
+}
+
+.p2{
+    border: 3px solid black;
+    background-color: cornflowerblue;
+    width: 25%;
+    text-align: justify;
+
+}
+
+.botones{
+    display: flex;   
+    
+}
+
+.b2{
+    background-color: transparent;
+    border: none;
+    padding: 28px;
+    flex-grow: 1;
+    font-size: 30px;
+    flex-shrink: 1;
+}
+
+.b2:hover{
+    background-color: darkgray;
+}
+
+.b2:nth-child(2){
+    flex-grow: 2;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+    width: 100%;
+    justify-content: center;
+    height: 300px;
+}
+
+.num{
+
+ /*   un acortador para las propiedades flex-grow flex-shrink y  flex-basis*/
+    flex: 0 1 300px;
+    background-color: beige;
+    align-items: flex-start;
+    margin: 0;
+    height: 50%;
+  
+    
+    
+      
+}
+
+.num:nth-child(2){
+    flex-shrink: 2;
+    align-self: flex-start;
+    
+}
+
+/* cambiar el la posicion de un elemento en el flex-box*/
+img:nth-child(2){
+    order: -1;
+}
+
